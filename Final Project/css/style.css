@@ -3,6 +3,8 @@
     padding: 0;
     border: 0;
 }
+@media screen and (min-width: 1450px){
+
 html {
     font-family: Arial, Helvetica, sans-serif;
     display:flex;
@@ -188,6 +190,10 @@ p {
     margin:1em;
 }
 
+input {
+    border: 2px solid #333;
+}
+
 .signupButton {
     background-color: #333;
     color: #fff;
@@ -231,4 +237,548 @@ td input {
     flex-direction: column;
     justify-content: center;
     height: 50%;
+}
+
+#logoutButton {
+    width: 15%;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1.6rem;
+    border: 1px solid #333;
+}
+}
+
+@media screen and (min-width: 1100px) and (max-width:1449px) {
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        display:flex;
+        flex-direction: column;
+        background: rgb(255,255,255);
+        background: linear-gradient(84deg, rgba(255,255,255,1) 6%, rgba(121,121,121,1) 94%);
+    }
+    img {
+        height: 2em;
+        padding: 0.5em;
+    }
+    .header {
+        display: flex;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        padding: 0.5em;
+    }
+    .header h1 {
+        width: 13%;
+    }
+    .nav {
+        margin-left: 30%;
+        text-decoration: none;
+
+    }
+    .bio {
+        color: #333;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        padding: 0.7em;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em;
+    }
+
+    #new-user {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+        padding: 1.2em;
+        border:0.5em solid #333;
+        border-radius: 10px;
+        background-color: #D8D8D8;
+        justify-content: center;
+        align-items: center;
+    }
+    #new-user h3 {
+        margin: 1.5em;
+    }
+
+
+    #new-user form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #new-user input {
+        padding: 0.5em;
+        margin:0.8em;
+    }
+
+    button {
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: #333;
+        color:#fff;
+    }
+
+    .submit {
+        background-color: #333;
+        color: #fff;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+        border:0.5em solid #333;
+        border-radius: 10px;
+        background-color: #D8D8D8;
+        padding: 1.2em;
+    }
+
+    #login h3 {
+        margin: 1.5em;
+    }
+
+    #login input {
+        padding-bottom: 0.7em;
+        margin: 0.5em;
+    }
+
+    .login {
+        padding: 0.8em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: #333;
+        color:#fff;
+    }
+
+    .footer {
+        padding: 1em;
+        height: 3em;
+        background-color: #333;
+        color: #fff;
+        justify-content: flex-end;
+        margin-top: 20vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .loginRedirect {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1.3em;
+    }
+
+    .loginRedirect h3 {
+        margin: 1.5em;
+    }
+
+    .loginRedirect input {
+        padding-bottom: 1em;
+        margin: 0.5em;
+    }
+
+    .loginRedirect {
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: #333;
+        color:#fff;
+    }
+
+    p {
+        color: red;
+        margin: 0.5em;
+    }
+    .indexRedirect {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        padding: 1.3em;
+    }
+    .indexRedirect h3 {
+        margin: 1.5em;
+    }
+
+
+    .indexRedirect form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .indexRedirect input {
+        padding: 0.5em;
+        margin:1em;
+    }
+
+    input {
+        border: 2px solid #333;
+    }
+
+    .signupButton {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .navlogin {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navlogin input {
+        margin: 0.5em;
+        margin-top: 2em;
+    }
+
+    .navlogin input {
+        margin-top: -1em;
+        background: #444;
+    }
+
+    td input {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .updateForm {
+        font-size: 1.6rem;
+        margin: 0.8em;
+        padding:0.5em;
+    }
+
+    #updateButton {
+        padding: 1em;
+        background-color: #333;
+        color: #fff;
+    }
+    .updateSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+    }
+
+    #logoutButton {
+        width: 15%;
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        font-size: 1.4rem;
+        border: 1px solid #333;
+    }
+
+}
+
+@media screen and (min-width: 0) and (max-width:1099px) {
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        display:flex;
+        flex-direction: column;
+        background: rgb(255,255,255);
+        background: linear-gradient(84deg, rgba(255,255,255,1) 6%, rgba(121,121,121,1) 94%);
+    }
+    img {
+        height: 1em;
+        padding: 0.3em;
+    }
+    .header {
+        display: flex;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        padding: 0.5em;
+    }
+    .header h1 {
+        width: 15%;
+        font-size: 1em;
+    }
+    .nav {
+        margin-left: 5%;
+        text-decoration: none;
+
+    }
+    .bio {
+        color: #333;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        padding: 0.5em;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em;
+    }
+
+    .signInContainer {
+        width: 100%;
+    }
+
+    #new-user {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+        padding: 1em;
+        border:0.5em solid #333;
+        border-radius: 10px;
+        background-color: #D8D8D8;
+        justify-content: center;
+        align-items: center;
+    }
+    #new-user h3 {
+        margin: 1em;
+    }
+
+
+    #new-user form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #new-user input {
+        padding: 0.5em;
+        margin:0.7em;
+    }
+
+    #registerContainer {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        text-align: center;
+        padding: 1em;
+        border:0.5em solid #333;
+        border-radius: 10px;
+        background-color: #D8D8D8;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        padding: 1em;
+        background-color: #333;
+        color:#fff;
+    }
+
+    .submit {
+        background-color: #333;
+        color: #fff;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+        border:0.5em solid #333;
+        border-radius: 10px;
+        background-color: #D8D8D8;
+        padding: 1em;
+    }
+
+    #login h3 {
+        margin: 1em;
+    }
+
+    #login input {
+        padding-bottom: 0.8em;
+        margin: 0.3em;
+    }
+
+    .login {
+        padding: 0.8em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #333;
+        color:#fff;
+    }
+
+    .footer {
+        padding: 1em;
+        height: 3em;
+        background-color: #333;
+        color: #fff;
+        justify-content: flex-end;
+        margin-top: 20vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .loginRedirect {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .loginRedirect h3 {
+        margin: 1em;
+    }
+
+    .loginRedirect input {
+        padding-bottom: 1em;
+        margin: 0.5em;
+    }
+
+    .loginRedirect {
+        padding: 0.8em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #333;
+        color:#fff;
+    }
+
+    p {
+        color: red;
+        margin: 0.5em;
+    }
+    .indexRedirect {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        padding: 1em;
+    }
+    .indexRedirect h3 {
+        margin: 1em;
+    }
+
+
+    .indexRedirect form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .indexRedirect input {
+        padding: 0.5em;
+        margin:1em;
+    }
+
+    input {
+        border: 2px solid #333;
+    }
+
+    .signupButton {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .navlogin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+
+    .navlogin input {
+        margin-top: 0.5em;
+    }
+
+    .navlogin input {
+        margin-top: -0.5em;
+        background: #444;
+    }
+
+    td input {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .updateForm {
+        font-size: 1.4rem;
+        margin: 1em;
+        padding:0.5em;
+    }
+
+    #updateButton {
+        padding: 1em;
+        background-color: #333;
+        color: #fff;
+    }
+    .updateSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+    }
+
+    #logoutButton {
+        width: 15%;
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        font-size: 1rem;
+        border: 1px solid #333;
+    }
 }

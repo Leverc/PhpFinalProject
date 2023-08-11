@@ -13,8 +13,9 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-<section class="main">
-    <div id="new-user">
+<!--Existing user Sign in Container-->
+<section class="signInContainer">
+    <div id="registerContainer">
         <h3>Please enter your information</h3>
         <form method="post" action="save-user.php">
             <p><input name="first_name" type="text" placeholder="First Name" required/></p>

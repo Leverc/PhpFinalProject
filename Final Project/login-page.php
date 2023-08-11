@@ -33,6 +33,7 @@ if(!isset($_SESSION['user_id'])){
 <th>Email</th>
 <th>Phone Number</th>
 </tr>';
+    //Iterate thru each element of the returned array and present the data in a table
     foreach($result as $row){
         echo '
 <tr>
@@ -41,24 +42,24 @@ if(!isset($_SESSION['user_id'])){
     <td>' . $row['email'] . '</td>
     <td>' . $row['telNumber'] . '</td>
     <td>
-        <form action="delete.php" method="post">
-            <input type="hidden" name="row_id" value="' . $row['ID'] . '" />
-            <input type="submit" name="delete button" value="X" />
-        </form>
-    </td>
-    <td>
         <form action="edit.php" method="post">
             <input type="hidden" name="id" value="' . $row['ID'] . '" />
             <input type="submit" name="edit button" value="Edit" />
+        </form>
+    </td>
+    <td>
+        <form action="delete.php" method="post">
+            <input type="hidden" name="row_id" value="' . $row['ID'] . '" />
+            <input type="submit" name="delete button" value="X" />
         </form>
     </td>
 </tr>';
     }
     echo '</table>';
     //Simple button to logout
-    echo '<div class=submit>';
-    echo '<a href="logout.php">Logout</a>';
-    echo '</div>';
+    echo '<a href=logout.php>';
+    echo '<div id=logoutButton>';
+    echo 'Logout</div></a>';
     $conn = null;
 }
 ?>

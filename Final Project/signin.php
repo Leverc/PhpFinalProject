@@ -2,7 +2,7 @@
     COMP1006
     Final project - sign in page
     AUGUST 11TH 2023-->
-<?php require ('./inc/footer.php'); ?>
+<?php require ('./inc/header.php'); ?>
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -12,14 +12,8 @@
     <title>Php Assignment 2</title>
     <link href="./css/style.css" rel="stylesheet">
 </head>
-
-<a href="./index.php">
-    <section class="header">
-        <h1>Example Php Login Page</h1>
-    </section>
-</a>
 <main>
-    <section class="main">
+    <section class="signInContainer" id="registerContainer">
         <div id="login">
             <h3>Please Sign in below</h3>
             <form method="post" action="./inc/validate.php">

@@ -9,12 +9,14 @@
 <section class="header">
     <img src="./inc/logo.png">
     <h1>Example Php Home Page</h1>
+<!--    Container to store the nav-->
     <div class="nav">
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
+            <li><a href="login-page.php">Members</a></li>
             <li><a href="register.php">Sign up</a></li>
         </ul>
+<!--        Form for the header log in-->
         <form class="navlogin" method="post" action="./inc/validate.php">
             <p><input name="username" type="text" placeholder="Username" required /></p>
             <p><input name="password" type="password" placeholder="Password" required /></p>
