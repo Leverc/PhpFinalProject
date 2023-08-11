@@ -2,21 +2,15 @@
     COMP1006
     Final Project - login page/members area
     AUGUST 11TH 2023-->
+<?php require ('./inc/header.php'); ?>
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Php Assignment 2 - Members Area</title>
-    <link href="./css/styleBasic.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
-<body>
-<a href="./index.php">
-    <section class="header">
-        <h1>Example Php Login Page</h1>
-    </section>
-</a>
-</body>
 <?php
 //   Check the session before we show any data
 session_start();
@@ -34,3 +28,4 @@ if(!isset($_SESSION['user_id'])){
     $conn = null;
 }
 ?>
+<?php require ('./inc/footer.php'); ?>

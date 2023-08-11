@@ -2,6 +2,8 @@
     COMP1006
     Final Project - Index Page
     AUGUST 11TH 2023-->
+<!--Add Header-->
+<?php require ('./inc/header.php'); ?>
 <html lang="en-us">
 
 <head>
@@ -11,29 +13,17 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <a href="./index.php">
-    <section class="header">
-            <h1>Example Php Home Page</h1>
-            <div class="nav">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Sign up</li>
-                </ul>
-            </div>
-    </section>
-    </a>
     <section class="main">
+<!--        New User Container-->
         <div id="new-user">
             <h3>New here? Click the button to sign up!</h3>
-            <form method="post" action="save-user.php">
                 <a href="register.php">
                     <button type="button">
                         Sign Up!
                     </button>
                 </a>
-            </form>
         </div>
+<!--        Login Container-->
         <div id="login">
             <h3>Returning? Sign in below</h3>
             <form method="post" action="./inc/validate.php">
@@ -48,3 +38,5 @@
 </body>
 
 </html>
+<!--Add Footer-->
+<?php require ('./inc/footer.php'); ?>

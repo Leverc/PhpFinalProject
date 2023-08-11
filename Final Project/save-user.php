@@ -2,21 +2,16 @@
     COMP1006
     Final Project - save user page
     AUGUST 11TH 2023-->
+<?php require ('./inc/header.php'); ?>
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Php Assignment 2 - User Save Page</title>
-        <link href="./css/styleBasic.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
     </head>
 <body>
-<a href="./index.php">
-    <section class="header">
-
-        <h1>Example Php Login Page</h1>
-    </section>
-</a>
 </body>
 <?php
 // Connection
@@ -63,17 +58,19 @@ if($valid) {
     echo '<section class="loginRedirect">';
     echo '<h3>Click the button below to head to the sign in page!</h3>';
     echo '<div class="submit">';
-    echo '<a href="signin.php">Sign In</a>';
+    echo '<a href="index.php">Sign In</a>';
     echo '</div>';
     echo '</section>';
-//    Else rediredct to homepage so they can try again.
+//    Else rediredct to sign up page so they can try again.
 }else {
     echo '<section class="indexRedirect">';
-    echo '<h3>Account was not created! Please try again on the home page</h3>';
+    echo '<h3>Account was not created! Please try again on the sign up page</h3>';
 
-    echo '<a href="index.php">';
-    echo '<div class="submit">Home</a>';
-    echo '</div>';
+    echo '<a href="register.php">';
+    echo '<div class="signupButton"><button>Sign up</button>';
+    echo '</div></a>';
     echo '</section>';
 }
 ?>
+
+<?php require ('./inc/footer.php'); ?>

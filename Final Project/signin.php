@@ -2,6 +2,7 @@
     COMP1006
     Final project - sign in page
     AUGUST 11TH 2023-->
+<?php require ('./inc/footer.php'); ?>
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -29,3 +30,4 @@
         </div>
     </section>
 </main>
+<?php require ('./inc/footer.php'); ?>
