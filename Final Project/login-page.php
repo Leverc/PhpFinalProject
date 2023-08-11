@@ -18,9 +18,41 @@ if(!isset($_SESSION['user_id'])){
     header('location:signin.php');
     exit();
 }else{
-
     //Display a success message if logged in
     echo '<p>Login Successful, welcome to the members area</p>';
+    //        Connect to the database
+    require'./inc/database.php';
+//        Set up query
+    $sql = "SELECT * FROM userList";
+//        Run the query
+    $result = $conn->query("$sql");
+    echo '<section class="userTable">';
+    echo '<table> <tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Phone Number</th>
+</tr>';
+    foreach($result as $row){
+        echo '
+<tr>
+    <td>' . $row['fname'] . '</td>
+    <td>' . $row['lname'] . '</td>
+    <td>' . $row['email'] . '</td>
+    <td>' . $row['telNumber'] . '</td>
+    <td>
+        <form action="delete.php" method="post">
+            <input type="hidden" name="row_id" value="' . $row['ID'] . '" />
+            <a href="login-page.php"><input type="button" name="delete button" value="X" /></a>
+        </form>
+        <form action="edit.php" method="post">
+            <input type="hidden" name="row_id" value="' . $row['ID'] . '" />
+            <input type="submit" name="edit button" value="Edit" />
+        </form>
+    </td>
+</tr>';
+    }
+    echo '</table>';
     //Simple button to logout
     echo '<div class=submit>';
     echo '<a href="logout.php">Logout</a>';

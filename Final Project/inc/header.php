@@ -7,7 +7,7 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <section class="header">
-    <img src="./logo.png">
+    <img src="./inc/logo.png">
     <h1>Example Php Home Page</h1>
     <div class="nav">
         <ul>

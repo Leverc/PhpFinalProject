@@ -17,12 +17,12 @@
     <div id="new-user">
         <h3>Please enter your information</h3>
         <form method="post" action="save-user.php">
-            <p><input class="form-control" name="first_name" type="text" placeholder="First Name" required/></p>
-            <p><input class="form-control" name="last_name" type="text" placeholder="Last Name" required /></p>
-            <p><input class="form-control" name="username" type="text" placeholder="Username" required /></p>
-            <p><input class="form-control" name="password" type="password" placeholder="Password" required /></p>
-            <p><input class="form-control" name="confirm" type="password" placeholder="Confirm Password" required /></p>
-            <input class="btn btn-light" type="submit" name="submit" value="Register" />
+            <p><input name="first_name" type="text" placeholder="First Name" required/></p>
+            <p><input name="last_name" type="text" placeholder="Last Name" required /></p>
+            <p><input name="username" type="text" placeholder="Username" required /></p>
+            <p><input name="password" type="password" placeholder="Password" required /></p>
+            <p><input name="confirm" type="password" placeholder="Confirm Password" required /></p>
+            <input type="submit" name="submit" value="Register" />
         </form>
     </div>
 

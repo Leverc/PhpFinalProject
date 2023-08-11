@@ -12,6 +12,7 @@ html {
 }
 img {
     height: 2em;
+    padding: 0.5em;
 }
 .header {
     display: flex;
@@ -29,7 +30,11 @@ img {
     text-decoration: none;
 
 }
-
+.bio {
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
 ul {
     display: flex;
     list-style: none;
@@ -203,4 +208,9 @@ p {
 .navlogin input {
     margin-top: -1em;
     background: #444;
+}
+
+td input {
+    background-color: #333;
+    color: #fff;
 }
