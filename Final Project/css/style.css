@@ -214,3 +214,21 @@ td input {
     background-color: #333;
     color: #fff;
 }
+
+.updateForm {
+    font-size: 1.8rem;
+    margin: 1em;
+    padding:0.5em;
+}
+
+#updateButton {
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+.updateSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+}

@@ -43,10 +43,12 @@ if(!isset($_SESSION['user_id'])){
     <td>
         <form action="delete.php" method="post">
             <input type="hidden" name="row_id" value="' . $row['ID'] . '" />
-            <a href="login-page.php"><input type="button" name="delete button" value="X" /></a>
+            <input type="submit" name="delete button" value="X" />
         </form>
+    </td>
+    <td>
         <form action="edit.php" method="post">
-            <input type="hidden" name="row_id" value="' . $row['ID'] . '" />
+            <input type="hidden" name="id" value="' . $row['ID'] . '" />
             <input type="submit" name="edit button" value="Edit" />
         </form>
     </td>
