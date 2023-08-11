@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0,158,13);
+    background: linear-gradient(84deg, rgba(0,158,13,1) 0%, rgba(9,85,203,1) 94%);
+}
+.header {
+    display: flex;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+#new-user {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    padding: 1.5em;
+    border:5px solid #333;
+}
+#new-user h3 {
+    margin: 2em;
+}
+
+
+#new-user form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#new-user input {
+    padding: 0.5em;
+    margin:1em;
+}
+
+button {
+    background-color: #333;
+    color:#fff;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    border:5px solid #333;
+    padding: 1.5em;
+}
+
+#login h3 {
+    margin: 2em;
+}
+
+#login input {
+    padding-bottom: 1em;
+    margin: 0.5em;
+}
+
+.login {
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: #333;
+    color:#fff;
+}
